@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #E7E9EB;
+}
+
+.grid-container {
+background-color: white;
+margin: 10vh 20vh ;
+}
+
+
+.form { 
+    grid-area: form; 
+    padding: 7vh 5vh;
+}
+
+.img { 
+    grid-area: img;
+    display: flex;
+
+}
+.image{
+     min-width: 100%;
+}
+.facebook{
+    background-color: #039be5;
+}
+.xing{
+    background-color: green;
+}
+.login > button{
+    margin: 7px;
+    width: 15vh;
+    height: 2.5vh;
+}
+.speace{
+    margin: 25px;
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    
+}
+@media screen and (min-width: 1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:'form img';
+        background-color: white;
+    }
+}
