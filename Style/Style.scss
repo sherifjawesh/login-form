@@ -1,3 +1,6 @@
+:root{
+    
+}
 *{
     box-sizing: border-box;
     text-align: center;
@@ -7,15 +10,16 @@ body {
     background-color: #E7E9EB;
 }
 
+.logo{
+    text-align:start
+}
 .grid-container {
 background-color: white;
 margin: 10vh 20vh ;
 }
-
-
 .form { 
     grid-area: form; 
-    padding: 7vh 5vh;
+    padding: 10vh 17vh;
 }
 
 .img { 
@@ -27,23 +31,55 @@ margin: 10vh 20vh ;
      min-width: 100%;
 }
 .facebook{
-    background-color: #039be5;
+    background-color: #1877f2;
 }
 .xing{
     background-color: green;
 }
 .login > button {
-    margin: 7px;
+    margin: 10px;
+    height: 4vh;
 }
 .speace{
-    margin: 25px;
-    text-align: center;
+    margin:25px auto;
+    width: 50%;
 }
 button{
-    border-radius: 5px;
+    border-radius: 4px;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid black;
+}
+.input-control  {
+    text-align: start !important;
+    margin: 30px 0;
     
 }
-@media screen and (min-width: 1200px) {
+.start  {
+    text-align: start !important;
+}
+
+label{
+    font-size: x-small;
+}
+
+a:link {
+    text-decoration: none;
+}
+.login-sign{
+    margin: 20px;
+    text-align: start;
+}
+.login-sign > button{
+    margin: 10px;
+    padding: 10px 20px;
+}
+a:hover {
+    text-decoration: none;
+}
+
+  @media screen and (min-width: 1200px) {
     .grid-container{
         display: grid;
         grid-template-areas:'form img';
