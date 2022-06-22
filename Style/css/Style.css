@@ -13,12 +13,12 @@ body {
 
 .grid-container {
   background-color: white;
-  margin: 10vh 20vh;
+  margin: 10vh 20vh 0;
 }
 
 .form {
   grid-area: form;
-  padding: 10vh 17vh;
+  padding: 10vh 17vh 0;
 }
 
 .img {
@@ -40,30 +40,36 @@ body {
 
 .login > button {
   margin: 10px;
-  height: 4vh;
+  height: 6vh;
+  color: white;
 }
 
-.speace {
-  margin: 25px auto;
-  width: 50%;
+label {
+  color: #ababab;
+}
+
+p {
+  margin: 30px auto;
 }
 
 button {
   border-radius: 4px;
+  border: none;
 }
 
 input[type=text] {
   border: none;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .input-control {
   text-align: start !important;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .start {
-  text-align: start !important;
+  margin: 30px 0;
 }
 
 label {
@@ -81,11 +87,22 @@ a:link {
 
 .login-sign > button {
   margin: 10px;
-  padding: 10px 20px;
+  width: 20vh;
+  height: 7vh;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+.forgetPassword {
+  margin-left: 28%;
+}
+
+.btn-login {
+  background: linear-gradient(131deg, #b717b7 25%, #b714b7 25%, #f2b324);
+  color: white;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 1200px) {
