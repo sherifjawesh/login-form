@@ -1,20 +1,18 @@
-:root{
-    
-}
+//import files
+@use "./helpers/function";
+@use "./helpers/mixin";
 *{
     box-sizing: border-box;
-    text-align: center;
 }
-
-
-
+:root{
+    --facebookColor:rgb(69 94 148)
+    --mainColorButton:linear-gradient(131deg, #b717b7 25%, #b714b7 25%, #f2b324);
+    --xingColor:rgb(14 80 76);
+}
 body {
     background-color: #E7E9EB;
 }
 
-.logo{
-    text-align:start
-}
 .grid-container {
 background-color: white;
 margin: 10vh 20vh 0;
@@ -33,13 +31,14 @@ margin: 10vh 20vh 0;
      min-width: 100%;
 }
 .facebook{
-    background-color: #1877f2;
+    background-color:var(--facebookColor) ;
 }
 .xing{
-    background-color: green;
+    background-color: var(--xingColor);
 }
 .login > button {
-    margin: 10px;
+    width: 45%;
+    margin: 10px 15px 10px 0;
     height: 6vh;
     color: white;
 }
@@ -47,8 +46,8 @@ label {
     color: #ababab;
 }
 
-p{
-    margin:30px auto;
+.p {
+    text-align: center;
 }
 button{
     border-radius: 4px;
@@ -60,7 +59,6 @@ input[type=text] {
     width: 100%;
 }
 .input-control  {
-    text-align: start !important;
     margin: 20px 0;
     
 }
@@ -75,14 +73,10 @@ label{
 a:link {
     text-decoration: none;
 }
-.login-sign{
-    margin: 20px;
-    text-align: start;
-}
 .login-sign > button{
-    margin: 10px;
-   width: 20vh;
-   height: 7vh;
+    margin: 2%;
+    width: 20vh;
+    height: 7vh;
 }
 a:hover {
     text-decoration: none;
@@ -91,14 +85,26 @@ a:hover {
     margin-left: 28%;
 }
 .btn-login {
-    background: linear-gradient(131deg, #b717b7 25%, #b714b7 25%, #f2b324);
+    background:var(--mainColorButton) ;
     color: white;
     margin-right: 20px;
 }
+
 @media screen and (min-width: 1200px) {
-.grid-container{
-    display: grid;
-    grid-template-areas:'form img';
-    background-color: white;
+    .grid-container{
+        display: grid;
+        grid-template-areas:'form img';
+        background-color: white;
+    }
 }
+
+$width: 200px;
+.element {
+    width: $width;
+    height: half($width);
+}
+
+//----------mixin--------
+.black-overlay{
+    @include overlay(black,0.5 )
 }

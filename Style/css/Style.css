@@ -1,14 +1,9 @@
 * {
   box-sizing: border-box;
-  text-align: center;
 }
 
 body {
   background-color: #E7E9EB;
-}
-
-.logo {
-  text-align: start;
 }
 
 .grid-container {
@@ -31,15 +26,16 @@ body {
 }
 
 .facebook {
-  background-color: #1877f2;
+  background-color: rgb(69, 94, 148);
 }
 
 .xing {
-  background-color: green;
+  background-color: rgb(14, 80, 76);
 }
 
 .login > button {
-  margin: 10px;
+  width: 45%;
+  margin: 10px 15px 10px 0;
   height: 6vh;
   color: white;
 }
@@ -48,8 +44,8 @@ label {
   color: #ababab;
 }
 
-p {
-  margin: 30px auto;
+.p {
+  text-align: center;
 }
 
 button {
@@ -64,7 +60,6 @@ input[type=text] {
 }
 
 .input-control {
-  text-align: start !important;
   margin: 20px 0;
 }
 
@@ -80,13 +75,8 @@ a:link {
   text-decoration: none;
 }
 
-.login-sign {
-  margin: 20px;
-  text-align: start;
-}
-
 .login-sign > button {
-  margin: 10px;
+  margin: 2%;
   width: 20vh;
   height: 7vh;
 }
@@ -111,4 +101,12 @@ a:hover {
     grid-template-areas: "form img";
     background-color: white;
   }
+}
+.element {
+  width: 200px;
+  height: half(200px);
+}
+
+.black-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=Style.css.map */
